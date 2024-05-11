@@ -1,10 +1,10 @@
-Application Météo avec Flutter
+## Application Météo avec Flutter
 
 Cette application météo est développée en utilisant Flutter, un framework open-source pour le développement d'applications multiplateformes.
 
 L'application permet à l'utilisateur de choisir jusqu'à cinq villes pour lesquelles il souhaite obtenir des prévisions météorologiques. Une fois les villes sélectionnées, l'application interroge une API météorologique pour récupérer les informations météorologiques actuelles et les prévisions à venir pour chacune des villes choisies. Elle est conçue pour offrir une expérience utilisateur simple et efficace pour obtenir des informations météorologiques sur plusieurs villes en même temps.
 
-***** Ecrans *****
+ ## Ecrans
 
 ![Screenshot_2024-05-11-11-16-06-09_067ca54d029a1c65bea8d27590265e45](https://github.com/divaarica/waveGUI_flutter/assets/151394040/86b9aee6-9129-4008-ba72-32021fe32490)
 
