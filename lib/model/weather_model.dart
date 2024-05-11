@@ -182,3 +182,34 @@ String getWeatherFrench(String ? mainCondition){
   return 'Clair';
 
 }
+
+String getBackgroundImage(String time, String mainCondition ){
+  List<String> timeParts = time.split(":");
+  int hour = int.parse(timeParts[0]);
+  int minutes = int.parse(timeParts[1]);
+
+  if(mainCondition.toLowerCase() == 'rain' || mainCondition.toLowerCase() == 'shower rain' || mainCondition.toLowerCase() == 'thunderstorm' ){
+    if (hour >= 5 && hour < 8) {
+      return "assets/images/sunriseBR.jpg";
+    } else if (hour >= 8 && hour < 17) {
+      return "assets/images/dayBR.jpg";
+    } else if (hour >= 17 && hour < 20) {
+      return "assets/images/sunsetBR.jpg";
+    } else {
+      return "assets/images/nightBR.jpg";
+    }
+  }else{
+
+    if (hour >= 5 && hour < 8) {
+      return "assets/images/sunrise.jpg";
+    } else if (hour >= 8 && hour < 17) {
+      return "assets/images/dayy.jpg";
+    } else if (hour >= 17 && hour < 20) {
+      return "assets/images/sunset.jpg";
+    } else {
+      return "assets/images/night.jpg";
+    }
+
+  }
+
+}

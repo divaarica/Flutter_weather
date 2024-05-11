@@ -110,14 +110,14 @@ class _WeatherPageState extends State<WeatherPage> {
                       final weather = weatherController.weatherList[index];
                       return GestureDetector(
                         child: Container(
-                          height: 120,
+                          height: 150,
                           //color: Colors.deepPurpleAccent,
                           child: Card(
                               child: Container(
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15.0),
                                     image: DecorationImage(
-                                      image: AssetImage(getMomentImage(weather.moment)),
+                                      image: AssetImage(getBackgroundImage(weather.time, weather.condition)),
                                       fit: BoxFit.cover,
                                     )
                                 ),
