@@ -87,7 +87,7 @@ class WeatherController extends GetxController{
   Future<void> fetchWeatherData() async{
     //final cities = ['Paris', 'Rennes', 'Marseille', 'Dijon', 'Rouen'];
     final city = cities[currentIndex];
-    const apiKey = '6e865077dd64a490c2c14d0bde919500';
+    const apiKey = '';
 
     //avec http
     // final response = await http.get(Uri.parse('http://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric'));
